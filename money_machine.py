@@ -1,13 +1,8 @@
 class MoneyMachine:
 
-    CURRENCY = "$"
+    CURRENCY = "zl"
 
-    # COIN_VALUES = {
-    #     "quarters": 0.25,
-    #     "dimes": 0.10,
-    #     "nickles": 0.05,
-    #     "pennies": 0.01
-    # }
+
 
     def __init__(self):
         self.profit = 0
@@ -21,8 +16,6 @@ class MoneyMachine:
         """Returns the total calculated from coins inserted."""
         print("Please insert coins.")
         self.money_received += int(input(f"How many zloty?: "))
-        # for coin in self.COIN_VALUES:
-        #     self.money_received += int(input(f"How many {coin}?: ")) * self.COIN_VALUES[coin]
         return self.money_received
 
     def make_payment(self, cost):
